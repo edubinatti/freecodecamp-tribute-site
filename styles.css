@@ -12,15 +12,14 @@ html {
 
 body {
     background-color: var(--bg-clr-background);
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    /* padding: 0; */
     min-height: 100%;
+    max-width: 80vw;
 }
 
-
 .header-content .title-block {
-    margin: 0 auto;
-    max-width: 80vw;
+    margin: 0 auto;    
     /* min-height: 10vh; */
     padding: 1em 2em;
     background-color: aquamarine;
@@ -29,51 +28,40 @@ body {
     align-items: center;
 }
 
-.header-content .title-block .main-title{
+.header-content .title-block #title {
     font-size: 2rem;
     font-weight: 500;
     padding: 1em;
 }
 
-.header-content .title-block .subtitle{
+.header-content .title-block .subtitle {
     font-size: 1.3rem;
 }
 
-.header-content .img-div {
-    max-width: 80vw;
+.header-content #img-div {
     margin: 0 auto;
     display: block;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
 }
 
 #image {
-    max-width: 60%;
+    max-height: 400px;
+    max-width: 100%;
     display: block;
     margin-right: auto;
     margin-left: auto;
     transition: .3s;
 }
 
-@media (max-width: 720px) 
-{
-    #image {
-        max-width: 80%;
-    }
-}
 
-@media (max-width: 425px) 
-{
-    #image {
-        max-width: 100%;
-    }
-}
 
 #image:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.img-caption{
+#img-caption {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,15 +72,15 @@ body {
 
 .main-content {
     margin: 0 auto;
-    max-width: 80vw;
+    text-align: justify;
 }
 
-.main-content .tribute-info {
+.main-content #tribute-info {
     padding: 3em 2em;
     columns: 2;
 }
 
-.main-content a{
+.main-content #tribute-link {
     color: currentColor;
     text-decoration: none;
     max-width: 100px;
@@ -103,6 +91,6 @@ body {
     transition: 0.3s;
 }
 
-.main-content a:hover{
+.main-content #tribute-link:hover {
     font-size: 1.1rem;
 }
